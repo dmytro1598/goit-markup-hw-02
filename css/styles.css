@@ -73,6 +73,10 @@ address {
 .link-header:active {
   color: var(--accent-color);
 }
+.contacts-footer:hover,
+.contacts-footer:active {
+  color: var(--accent-color);
+}
 
 .list > .header-list {
   font-weight: 500;
@@ -146,7 +150,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.contacts {
+.contacts-footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .logo-web {
