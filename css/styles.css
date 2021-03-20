@@ -70,7 +70,7 @@ address {
 }
 
 .link-header:hover,
-.link-header:active {
+.link-header:focus {
   color: var(--accent-color);
 }
 .contacts-footer:hover,
