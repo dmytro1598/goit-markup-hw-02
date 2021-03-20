@@ -38,6 +38,7 @@ address {
 
 .list {
   list-style: none;
+  padding-left: 0px;
 }
 
 .link-button:hover,
@@ -76,16 +77,41 @@ address {
 .contacts-footer:active {
   color: var(--accent-color);
 }
-
-.list > .header-list {
+.main-nav {
+  display: flex;
+}
+.list-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.link-logo {
+  margin-left: 215px;
+}
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+.list > .list-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+.item > .link-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.list-contacts {
+  display: flex;
+  margin-left: auto;
+  margin-right: 215px;
+}
 
 .main-title {
+  background-color: var(--dark-bg-color);
+}
+
+.title-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -93,7 +119,6 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: var(--dark-bg-color);
 }
 
 .title-advantage {
