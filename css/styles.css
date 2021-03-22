@@ -55,6 +55,9 @@ ul {
 .section {
   padding: 94px 0px;
 }
+.footer-section {
+  padding: 60px 0px;
+}
 .engage-section {
   padding-top: 0px;
 }
@@ -107,7 +110,9 @@ address {
   border: 0px;
   border-radius: 4px;
 }
-
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .link-header:hover,
 .link-header:focus {
   color: var(--accent-color);
@@ -137,8 +142,8 @@ address {
 }
 .item > .link-header {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 .list-contacts {
   display: flex;
@@ -175,11 +180,13 @@ address {
 }
 
 .title-advantage {
+  display: flex;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .feature {
   font-size: 14px;
@@ -217,8 +224,6 @@ address {
 .team-section {
   background-color: var(--second-bg-color);
 }
-.team-card {
-}
 .name-title {
   font-weight: 500;
   font-size: 16px;
@@ -245,9 +250,16 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
 }
 .contacts-footer {
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+}
+.logo-footer {
+  display: flex;
+  margin-bottom: 10px;
 }
 .logo-web {
   font-family: Raleway;
@@ -276,7 +288,23 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
+.list-filter {
+  display: flex;
+  justify-content: center;
+}
+.list-filter > .filter-boxes:not(:first-child) {
+  margin-left: 8px;
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-card {
+  border: 1px solid #eeeeee;
+}
+.list-portfolio > .portfolio-card:not(:first-child) {
+  margin-left: 30px;
+}
 .portfolio-card-title {
   font-weight: bold;
   font-size: 18px;
