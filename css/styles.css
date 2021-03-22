@@ -26,7 +26,38 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-header {
+  margin-top: 0px;
+}
+.section {
+  padding: 94px 0px;
+}
+.engage-section {
+  padding-top: 0px;
+}
 .link {
   text-decoration: none;
   color: inherit;
@@ -52,10 +83,16 @@ address {
   font-size: 16px;
   line-height: 1.87;
   display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
 
 .button-portfolio {
@@ -67,6 +104,8 @@ address {
   color: var(--main-text-color);
   background-color: var(--second-bg-color);
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
 }
 
 .link-header:hover,
@@ -79,14 +118,13 @@ address {
 }
 .main-nav {
   display: flex;
+  align-items: center;
 }
 .list-nav {
   display: flex;
   margin-left: 93px;
 }
-.link-logo {
-  margin-left: 215px;
-}
+
 .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -98,17 +136,22 @@ address {
   color: var(--main-text-color);
 }
 .item > .link-header {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .list-contacts {
   display: flex;
   margin-left: auto;
-  margin-right: 215px;
 }
 
 .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--dark-bg-color);
+  height: 600px;
 }
 
 .title-text {
@@ -119,6 +162,16 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
+}
+.advantage-list {
+  display: flex;
+}
+.advantage-boxes {
+  flex-basis: calc((100% - 30px * 3) / 4);
+}
+.advantage-boxes:not(:first-child) {
+  margin-left: 30px;
 }
 
 .title-advantage {
@@ -126,13 +179,22 @@ address {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-
 .feature {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.engage-list {
+  display: flex;
+}
+.engage-boxes {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+.engage-boxes:not(:first-child) {
+  margin-left: 30px;
 }
 .title-section {
   font-weight: bold;
@@ -140,12 +202,22 @@ address {
   line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-card {
+  background-color: #ffffff;
+  flex-basis: calc((100% - 30px * 3) / 4);
+}
+.team-card:not(:first-child) {
+  margin-left: 30px;
 }
 .team-section {
   background-color: var(--second-bg-color);
 }
 .team-card {
-  background-color: #ffffff;
 }
 .name-title {
   font-weight: 500;
