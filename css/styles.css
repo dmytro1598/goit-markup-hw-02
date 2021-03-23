@@ -56,7 +56,8 @@ ul {
   padding: 94px 0px;
 }
 .footer-section {
-  padding: 60px 0px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .engage-section {
   padding-top: 0px;
@@ -197,6 +198,11 @@ address {
 .engage-list {
   display: flex;
 }
+.img-link {
+  display: block;
+  ax-width: 100%;
+  height: auto;
+}
 .engage-boxes {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
@@ -206,7 +212,7 @@ address {
 .title-section {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.7;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -216,6 +222,7 @@ address {
 }
 .team-card {
   background-color: #ffffff;
+  line-height: 0px;
   flex-basis: calc((100% - 30px * 3) / 4);
 }
 .team-card:not(:first-child) {
@@ -227,13 +234,20 @@ address {
 .name-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
 }
 .profession {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.name-title + .profession {
+  margin-top: 10px;
 }
 .footer {
   background-color: var(--dark-bg-color);
@@ -255,11 +269,12 @@ address {
 }
 .contacts-footer {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 10px;
+  margin-top: 9px;
 }
+
 .logo-footer {
-  display: flex;
-  margin-bottom: 10px;
+  line-height: 1.9;
+  margin-bottom: 20px;
 }
 .logo-web {
   font-family: Raleway;
@@ -288,9 +303,11 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 .list-filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .list-filter > .filter-boxes:not(:first-child) {
   margin-left: 8px;
@@ -298,12 +315,23 @@ address {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  list-style: none;
 }
 .portfolio-card {
-  border: 1px solid #eeeeee;
+  line-height: 0px;
 }
-.list-portfolio > .portfolio-card:not(:first-child) {
+.portfolio-card-border {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.list-portfolio > .portfolio-card {
   margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .portfolio-card-title {
   font-weight: bold;
@@ -316,4 +344,7 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.portfolio-card-title + .portfolio-card-description {
+  margin-top: 4px;
 }
